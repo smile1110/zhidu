@@ -1,0 +1,42 @@
+body {
+    line-height: 24px;
+    text-align: left;
+    font: 14px Helvetica Neue,Helvetica,PingFang SC,Tahoma,Arial,sans-serif;
+}
+blockquote, body, button, dd, div, dl, dt, form, h1, h2, h3, h4, h5, h6, input, li, ol, p, pre, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+ul{
+  padding:0;
+  list-style: none;
+}
+li,ol,ul{list-style:none}
+:focus{outline:0}
+a {
+  color: #333;
+  display: inline-block;
+  text-decoration: none;
+  outline: none;
+}
+a:active, a:hover {
+    outline: 0;
+}
+span,i{display:inline-block;vertical-align: middle;}
+i, cite, em, var, address, dfn {
+    font-style: normal;
+}
+html{
+  background-color: #f2f2f2;
+}
+.color{color:#f56040;}
+.fl{float:left}
+.fr{float:right}
+.clearfix:after{content:"\0020";display:block;clear:both;height:0;visibility:hidden}
+* html .clearfix,*+html .clearfix{zoom:1}
+div,p,span{text-align: left;}
+/*下滑线颜色：EBEEF5*/
+/*灰色小子：#999*/
+/*#f56040背景的hover色：f04622*/
+/*回答：font-size:18px;color:#333;font-weight:bold;*/
