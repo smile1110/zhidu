@@ -1,206 +1,37 @@
+<!-- 专场列表 -->
 <template>
 	<div>
 		<div class="main-list">
-			<ul class="list-box">
+			<!-- 专场的列表 -->
+			<ul class="card-list-box">
 				<li class="list-item" @click="toDetail">
-					<a href="#" class="item-head"><img src="../../../images/head.jpg"/></a>
+					<a href="#" class="item-head file-img"><img src="../../../images/head.jpg"/></a>
 					<div class="item-head-box">
-						<a href="" class="head-box-type"><span class="ident"><i class="icon el-icon-medal"></i>精选</span>
-							<span class="head-box-text">【每日一问】你认为允许撤回消息的时长应该是多少才合理？</span>
-						</a>
-						<div class="clearfix others-list">
-							<p class="fl">
-								<a href="others"><img src="../../../images/head.jpg" class="other-head"/></a>
-								<a href="others"><img src="../../../images/head.jpg" class="other-head"/></a>
-								<a href="others"><img src="../../../images/head.jpg" class="other-head"/></a>
-								<span class="others-list-text">等3人参与讨论 | 2天前</span>
+						<div class="p-desc">起点学院金牌导师解答 1v1，我是腾讯高级数据分析师@凌霄，欢迎大家向我提问</div>
+						<div class="clearfix others-desc">
+							<p class="fl yw-remind">
+								<span class="sp1">提问：0</span>
+								<span class="sp1">回答：2</span>
 							</p>
 							<p class="fr right-text">
-								<span class="others-list-text"><i class="icon el-icon-view"></i>2.4k</span>
-								<span class="others-list-text"><i class="icon el-icon-chat-dot-round"></i>3</span>
+								<i class="icon el-icon-magic-stick"></i>
+								<span class="s2">火热进行中</span>
 							</p>
 						</div>
 					</div>
 				</li>
-				<li class="list-item">
-					<a href="#" class="item-head"><img src="../../../images/head.jpg"/></a>
-					<div class="item-head-box">
-						<a href="" class="head-box-type"><span class="ident">精选</span>
-							<span class="head-box-text">【每日一问】你认为允许撤回消息的时长应该是多少才合理,长应该是多少才合理长应该是多少才合理？</span>
-						</a>
-						<div class="clearfix others-list">
-							<p class="fl">
-								<a href="others"><img src="../../../images/head.jpg" class="other-head"/></a>
-								<a href="others"><img src="../../../images/head.jpg" class="other-head"/></a>
-								<a href="others"><img src="../../../images/head.jpg" class="other-head"/></a>
-								<span class="others-list-text">等3人参与讨论 | 2天前</span>
-							</p>
-							<p class="fr right-text">
-								<span class="others-list-text"><i class="icon el-icon-view"></i>2.4k</span>
-								<span class="others-list-text"><i class="icon el-icon-chat-dot-round"></i>3</span>
-							</p>
-						</div>
-					</div>
-				</li>
-				<li class="list-item">
-					<a href="#" class="item-head"><img src="../../../images/head.jpg"/></a>
-					<div class="item-head-box">
-						<a href="" class="head-box-type"><span class="ident">精选</span>
-							<span class="head-box-text">【每日一问】你认为允许撤回消息的时长应该是多少才合理？</span>
-						</a>
-						<div class="clearfix others-list">
-							<p class="fl">
-								<a href="others"><img src="../../../images/head.jpg" class="other-head"/></a>
-								<a href="others"><img src="../../../images/head.jpg" class="other-head"/></a>
-								<a href="others"><img src="../../../images/head.jpg" class="other-head"/></a>
-								<span class="others-list-text">等3人参与讨论 | 2天前</span>
-							</p>
-							<p class="fr right-text">
-								<span class="others-list-text"><i class="icon el-icon-view"></i>2.4k</span>
-								<span class="others-list-text"><i class="icon el-icon-chat-dot-round"></i>3</span>
-							</p>
-						</div>
-					</div>
-				</li>
-				<li class="list-item">
-					<a href="#" class="item-head"><img src="../../../images/head.jpg"/></a>
-					<div class="item-head-box">
-						<a href="" class="head-box-type"><span class="ident">精选</span>
-							<span class="head-box-text">【每日一问】你认为允许撤回消息的时长应该是多少才合理？</span>
-						</a>
-						<div class="clearfix others-list">
-							<p class="fl">
-								<a href="others"><img src="../../../images/head.jpg" class="other-head"/></a>
-								<a href="others"><img src="../../../images/head.jpg" class="other-head"/></a>
-								<a href="others"><img src="../../../images/head.jpg" class="other-head"/></a>
-								<i class="icon el-icon-more"></i>
-								<span class="others-list-text">等30人参与讨论 | 2天前</span>
-							</p>
-							<p class="fr right-text">
-								<span class="others-list-text"><i class="icon el-icon-view"></i>2.4k</span>
-								<span class="others-list-text"><i class="icon el-icon-chat-dot-round"></i>3</span>
-							</p>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-		<!-- 热门 -->
-		<div class="hot-field">
-			<div class="clearfix hot-title">
-				<div class="fl"><i class="icon el-icon-chat-line-square"></i><span class="hot">热门专场</span></div>
-				<div class="fr"><a class="more" href="#">查看更多</a></div>
-			</div>
-			<ul class="hot-person clearfix">
-				<li class="hot-card">
-					<div class="hot-t clearfix">
-						<div class="hot-img fl">
-							<p class="s1">凌霄</p>
-							<p class="s2">腾讯营业部技术负责人</p>
-							<p class="s2">腾讯高级分析师</p>
-						</div>
-						<div class="fr"><img class="hot-head" src="../../../images/head.jpg"></div>
-					</div>
-					<div class="hot-b">
-						<p class="p1">起点学院金牌导师解答 1v1，我是腾讯高级数据分析师@凌霄，欢迎大家向我提问</p>
-						<p class="p2"><span>提问：2</span><span>回答：0</span></p>
-					</div>
-				</li>
-				<li class="hot-card">
-					<div class="hot-t clearfix">
-						<div class="hot-img fl">
-							<p class="s1">凌霄</p>
-							<p class="s2">腾讯营业部技术负责人</p>
-							<p class="s2">腾讯高级分析师</p>
-						</div>
-						<div class="fr"><img class="hot-head" src="../../../images/head.jpg"></div>
-					</div>
-					<div class="hot-b">
-						<p class="p1">起点学院金牌导师解答 1v1，我是腾讯高级数据分析师@凌霄，欢迎大家向我提问</p>
-						<p class="p2"><span>提问：2</span><span>回答：0</span></p>
-					</div>
-				</li>
-			</ul>
-		</div>
-		<div class="main-list">
-			<ul class="list-box">
 				<li class="list-item" @click="toDetail">
-					<a href="#" class="item-head"><img src="../../../images/head.jpg"/></a>
+					<a href="#" class="item-head file-img"><img src="../../../images/head.jpg"/></a>
 					<div class="item-head-box">
-						<a href="" class="head-box-type"><span class="ident"><i class="icon el-icon-medal"></i>精选</span>
-							<span class="head-box-text">【每日一问】你认为允许撤回消息的时长应该是多少才合理？</span>
-						</a>
-						<div class="clearfix others-list">
-							<p class="fl">
-								<a href="others"><img src="../../../images/head.jpg" class="other-head"/></a>
-								<a href="others"><img src="../../../images/head.jpg" class="other-head"/></a>
-								<a href="others"><img src="../../../images/head.jpg" class="other-head"/></a>
-								<span class="others-list-text">等3人参与讨论 | 2天前</span>
+						<div class="p-desc">起点学院金牌导师解答 1v1，我是腾讯高级数据分析师@凌霄，欢迎大家向我提问</div>
+						<div class="clearfix others-desc">
+							<p class="fl yw-remind">
+								<span class="sp1">提问：0</span>
+								<span class="sp1">回答：2</span>
 							</p>
 							<p class="fr right-text">
-								<span class="others-list-text"><i class="icon el-icon-view"></i>2.4k</span>
-								<span class="others-list-text"><i class="icon el-icon-chat-dot-round"></i>3</span>
-							</p>
-						</div>
-					</div>
-				</li>
-				<li class="list-item">
-					<a href="#" class="item-head"><img src="../../../images/head.jpg"/></a>
-					<div class="item-head-box">
-						<a href="" class="head-box-type"><span class="ident">精选</span>
-							<span class="head-box-text">【每日一问】你认为允许撤回消息的时长应该是多少才合理,长应该是多少才合理长应该是多少才合理？</span>
-						</a>
-						<div class="clearfix others-list">
-							<p class="fl">
-								<a href="others"><img src="../../../images/head.jpg" class="other-head"/></a>
-								<a href="others"><img src="../../../images/head.jpg" class="other-head"/></a>
-								<a href="others"><img src="../../../images/head.jpg" class="other-head"/></a>
-								<span class="others-list-text">等3人参与讨论 | 2天前</span>
-							</p>
-							<p class="fr right-text">
-								<span class="others-list-text"><i class="icon el-icon-view"></i>2.4k</span>
-								<span class="others-list-text"><i class="icon el-icon-chat-dot-round"></i>3</span>
-							</p>
-						</div>
-					</div>
-				</li>
-				<li class="list-item">
-					<a href="#" class="item-head"><img src="../../../images/head.jpg"/></a>
-					<div class="item-head-box">
-						<a href="" class="head-box-type"><span class="ident">精选</span>
-							<span class="head-box-text">【每日一问】你认为允许撤回消息的时长应该是多少才合理？</span>
-						</a>
-						<div class="clearfix others-list">
-							<p class="fl">
-								<a href="others"><img src="../../../images/head.jpg" class="other-head"/></a>
-								<a href="others"><img src="../../../images/head.jpg" class="other-head"/></a>
-								<a href="others"><img src="../../../images/head.jpg" class="other-head"/></a>
-								<span class="others-list-text">等3人参与讨论 | 2天前</span>
-							</p>
-							<p class="fr right-text">
-								<span class="others-list-text"><i class="icon el-icon-view"></i>2.4k</span>
-								<span class="others-list-text"><i class="icon el-icon-chat-dot-round"></i>3</span>
-							</p>
-						</div>
-					</div>
-				</li>
-				<li class="list-item">
-					<a href="#" class="item-head"><img src="../../../images/head.jpg"/></a>
-					<div class="item-head-box">
-						<a href="" class="head-box-type"><span class="ident">精选</span>
-							<span class="head-box-text">【每日一问】你认为允许撤回消息的时长应该是多少才合理？</span>
-						</a>
-						<div class="clearfix others-list">
-							<p class="fl">
-								<a href="others"><img src="../../../images/head.jpg" class="other-head"/></a>
-								<a href="others"><img src="../../../images/head.jpg" class="other-head"/></a>
-								<a href="others"><img src="../../../images/head.jpg" class="other-head"/></a>
-								<i class="icon el-icon-more"></i>
-								<span class="others-list-text">等30人参与讨论 | 2天前</span>
-							</p>
-							<p class="fr right-text">
-								<span class="others-list-text"><i class="icon el-icon-view"></i>2.4k</span>
-								<span class="others-list-text"><i class="icon el-icon-chat-dot-round"></i>3</span>
+								<i class="icon el-icon-magic-stick"></i>
+								<span class="s2">火热进行中</span>
 							</p>
 						</div>
 					</div>
@@ -225,3 +56,13 @@
 	    }
 	}
 </script>
+<style type="text/css">
+	.right-text{color:#f56040;font-size:14px;}
+	/*.card-list-box{padding:30px 0;}*/
+	.card-list-box li{padding:30px 0;border-bottom:1px solid #EBEEF5;}
+	.card-list-box li .others-desc{padding:0 30px;}
+	.card-list-box .file-img{height:190px;border-radius: 6px;border:1px solid #EBEEF5;margin:0 30px;box-sizing:border-box;}
+	.card-list-box .file-img img{width:100%;height:100%;}
+	.card-list-box .others-desc{padding:0 30px;}
+	.card-list-box .p-desc{font-size: 16px;color:#333;line-height:24px;margin-top:18px;margin-bottom:10px;padding:0 30px;}
+</style>

@@ -40,7 +40,7 @@
 								</div>
 							</div>
 							<div class="fr">
-								<span class="star_num"><i>3</i><i class="icon el-icon-star-off"></i></span>
+								<span class="star_num"><i>3</i><i class="icon el-icon-star-on"></i></span>
 							</div>
 						</div>
 						<div class="yw-content-main">短视频潮流下的针对某个领域的垂直细分，和电商一样的打法，快手只是最早动手的</div>
@@ -91,7 +91,7 @@
 			</div>
 			<!-- 热门推荐 -->
 			<div class="hot-contain">
-				<h3 class="hot-title">热门推荐</h3>
+				<h3 class="hot-title"><i class="icon el-icon-remen"></i>热门推荐</h3>
 				<ul class="hot-artical-ul">
 					<li class="hot-artical-li">
 						<p class="hot-li-title">你见过哪些迷信互联网的歪理邪说和案例？</p>
@@ -165,7 +165,7 @@
 	.yw-content-head .head-desc{display: inline-block;margin-left:8px;}
 	.yw-content-head .head-desc .p1{font-size: 16px;line-height: 22px;margin-top:10px;}
 	.yw-content-head .head-desc .p2{font-size: 12px;text-align: left;}
-	.yw-content-head .star_num{line-height: 40px;width:60px;height:40px;background:#EBEEF5;border-radius: 5px;margin-top:10px;text-align: center;}
+	.yw-content-head .star_num{line-height: 40px;width:60px;height:40px;background:#EBEEF5;border-radius: 5px;margin-top:10px;text-align: center;cursor: pointer;}
 	.yw-content-head .star_num .icon{}
 	.yw-content-main{padding:30px;margin-top:20px;}
 	.yw-content-bottom{padding: 0 30px;}

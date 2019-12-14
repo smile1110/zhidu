@@ -66,9 +66,15 @@
 .wb-main .main-left ul li i.icon{font-size:18px;margin-right:8px;}
 .wb-main .main-left ul li a.router-link-active{color:#f56040;border-left: 1px solid #f04622;background:#fbe7e2;}
 .wb-main .main-right .main-nav .el-menu-item{font-size:16px;}
-.wb-main .main-right .main-nav .add-art{color:#f56040;padding:20px 0 0 0;font-size:16px;cousor:pointer;}
+.wb-main .main-right .main-nav .add-art{color:#f56040;padding:20px 0 0 0;font-size:16px;cursor:pointer;}
 /*列表*/
 .wb-main .main-right .main-nav .main-empty-tips .art-tips{font-size: 12px;color: red;padding-top: 12px;text-align: left;}
 .wb-main .main-right .main-nav .art-empty-list{text-align: center;font-size:18px;padding:20px 0;}
 .main-right .main-nav li.is-active{border-bottom: 2px solid #f56040;}
+/*文章列表*/
+.art-list-box {padding-bottom:60px;}
+.art-list-box .list-item{border-bottom:1px dotted #EBEEF5;padding:12px 0 10px;font-size:14px;color:#333;}
+.art-list-box .list-item .el-icon-time{margin-right:4px;}
+.art-list-box .list-item .el-icon-delete{cursor: pointer;color:red;margin-left:8px;}
+.art-list-box .list-item .time-box{}
 </style>

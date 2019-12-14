@@ -1,3 +1,4 @@
+<!-- 最新列表 -->
 <template>
 	<div>
 		<div class="main-list">
@@ -5,8 +6,7 @@
 				<li class="list-item" @click="toDetail">
 					<a href="#" class="item-head"><img src="../../../images/head.jpg"/></a>
 					<div class="item-head-box">
-						<a href="" class="head-box-type"><span class="ident"><i class="icon el-icon-medal"></i>精选</span>
-							<span class="head-box-text">【每日一问】你认为允许撤回消息的时长应该是多少才合理？</span>
+						<a href="" class="head-box-type"><span class="ident"><i class="icon el-icon-medal"></i>精选</span>【每日一问】你认为允许撤回消息的时长应该是多少才合理你认为允许撤回消息的时长应该是多少才合理？
 						</a>
 						<div class="clearfix others-list">
 							<p class="fl">
@@ -25,7 +25,8 @@
 				<li class="list-item">
 					<a href="#" class="item-head"><img src="../../../images/head.jpg"/></a>
 					<div class="item-head-box">
-						<a href="" class="head-box-type"><span class="ident">精选</span>
+						<a href="" class="head-box-type">
+							<!-- <span class="ident">精选</span> -->
 							<span class="head-box-text">【每日一问】你认为允许撤回消息的时长应该是多少才合理,长应该是多少才合理长应该是多少才合理？</span>
 						</a>
 						<div class="clearfix others-list">

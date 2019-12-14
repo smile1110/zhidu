@@ -1,3 +1,4 @@
+<!-- 悬赏红包列表 -->
 <template>
 	<div>
 		<div class="main-list">

@@ -1,29 +1,30 @@
 <template>
     <div>
-        <el-card style="height: 610px;">
-            <quill-editor v-model="content" ref="myQuillEditor" style="height: 500px;" :options="editorOption">
-            </quill-editor>
-        </el-card>
+        <!-- <el-form> -->
+            <editor @input="handelIncrease"></editor>
+        <!-- </el-form> -->
     </div>
 </template>
 
 <script>
-    import quillEditor from 'vue-quill-editor';
-    import 'quill/dist/quill.core.css';
-    import 'quill/dist/quill.snow.css';
-    import 'quill/dist/quill.bubble.css';
-    export default {
-        name: 'FuncFormsEdit',
-        components: {
-            quillEditor
-        },
-        data() {
-            return {
-                content: null,
-                editorOption: {}
-            }
+import editor from "../../../components/TextEditor.vue";
+// console.log( editor )
+export default {
+    name: 'richtext',
+    components: {
+        editor
+    },
+    data() {
+        return {
+            
+        }
+    },
+    methods:{
+        handelIncrease(step) {
+           console.log("step",step)
         }
     }
+}
 
 </script>
 

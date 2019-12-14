@@ -18,49 +18,50 @@ export default new Router({
   mode:'history',             //本地浏览的url链接，有个#，目的是把#号去掉
   routes: [
     {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+        path: '/',
+        name: 'HelloWorld',
+        component: HelloWorld
     },
     {
     	path:'/my',
     	name:'my',
     	component:myindex,
     	children:[
-      		{
-            path:'artical',
-            name:'artical',
-            component:myartical,
-          },
-          {
-            path:'collect',
-            name:'collect',
-            component:mycollect
-          },
-          {
-            path:'richtext',
-            name:'richtext',
-            component:richtext
-          }
+          	{
+                path:'artical',
+                name:'artical',
+                component:myartical,
+                children:[]
+            },
+            {
+                path:'collect',
+                name:'collect',
+                component:mycollect
+            }
     	]
     },
     {
-      path:'/ywindex',     //夜问模块
-      name:'ywindex',
-      component:ywindex,
-      children:[
+        path:'richtext',
+        name:'richtext',
+        component:richtext
+    },
+    {
+        path:'/ywindex',     //夜问模块
+        name:'ywindex',
+        component:ywindex,
+        children:[
           
           // {
           //   path:'yw_sp_detail',
           //   name:'yw_sp_detail',
           //   component:yw_sp_detail,
           // },
-      ]
+        ]
     },
     {
-      path:'/ywdetail',
-      name:'ywdetail',
-      component:ywdetail,
+        path:'/ywdetail',
+        name:'ywdetail',
+        component:ywdetail,
     },
   ]
 })

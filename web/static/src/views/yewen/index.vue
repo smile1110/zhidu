@@ -12,7 +12,7 @@
 				<el-tabs v-model="activeIndex" @tab-click="handleClick">
 				    <el-tab-pane label="最新" name="1"></el-tab-pane>
 				    <el-tab-pane label="推荐" name="2"></el-tab-pane>
-				    <el-tab-pane label="悬赏红包" name="3"></el-tab-pane>
+				    <el-tab-pane label="悬赏红包" name="3"><i class="icon el-icon-hongbao"></i></el-tab-pane>
 				    <el-tab-pane label="专场" name="4"></el-tab-pane>
 				</el-tabs>
 				<!-- 最新的tab -->
@@ -106,8 +106,9 @@
 	.list-box .list-item .icon{font-size:16px;vertical-align: top;margin-right:2px;}
 	.list-box .list-item .item-head{margin-right:30px;}
 	.list-box .list-item .item-head img{width:40px;height:40px;border-radius: 30px;}
+	.list-box .head-box-type{line-height: 20px;}
 	.list-box .head-box-type span.ident{width: 60px;height: 20px;background: rgba(255,85,0,1);border-radius: 4px;color: white;font-size: 12px;display: inline-block;text-align: center;line-height: 20px;}
-	.list-box .head-box-text{font-size:14px;}
+	.list-box .head-box-text{font-size:14px;line-height: 20px;}
 	.list-box .other-head{display:inline-block;width:20px;height:20px;border-radius: 60px;margin-right: 4px;}
 	.list-box .others-list{margin-top:16px;}
 	.list-box .others-list .right-text{font-size:0;}

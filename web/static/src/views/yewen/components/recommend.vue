@@ -1,3 +1,4 @@
+<!-- 推荐列表 -->
 <template>
 	<div>
 		<div class="main-list">

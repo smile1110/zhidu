@@ -39,7 +39,7 @@
 	    methods:{
 	    	editArtical:function(){
 	    		console.log(this.$router);
-	    		this.$router.push({path:"/my/richtext"})
+	    		this.$router.push({path:"/richtext"})
 	    	},
 	    	handleSelect(key, keyPath) {
 		        console.log(key, keyPath);
