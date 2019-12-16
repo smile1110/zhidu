@@ -20,6 +20,25 @@ Vue.use(ElementUi);
 Vue.prototype.$axios = axios;
 // Vue.prototype.$axios = axios;
 
+//导航钩子守卫
+router.beforeEach((to, from, next) => {
+	let token = sessionStorage.getItem('userName');
+	let path = to.path
+	if (path === '/login') {
+	    next()
+	    return
+	}
+	if (token) {
+	    next();
+	} else {
+	    // next({
+	      // path: '/login'
+	    // })
+	    next();
+	}
+})
+
+Vue.config.productionTip = false
 new Vue({
   	router,
   	// store,

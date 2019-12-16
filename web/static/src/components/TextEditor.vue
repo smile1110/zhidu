@@ -1,8 +1,7 @@
 <template>
     <div>
-       <editor
+        <editor
             v-model="content"
-            ref="myQuillEditor" 
             :options="editorOption" 
             @blur="onEditorBlur($event)" @focus="onEditorFocus($event)"
             @change="onEditorChange($event)">
@@ -64,9 +63,8 @@ export default {
             content: this.value,
             quillUpdateImg: false, // 根据图片上传状态来确定是否显示loading动画，刚开始是false,不显示
             editorOption: {
-                placeholder: "",
                 theme: "snow", // or 'bubble'
-                placeholder: "您想说点什么？",
+                placeholder: "请输入内容",
                 modules: {
                     toolbar: {
                         container: toolbarOptions,

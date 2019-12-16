@@ -31,19 +31,21 @@ export default new Router({
                 path:'artical',
                 name:'artical',
                 component:myartical,
-                children:[]
+                children:[
+                    
+                ]
             },
             {
                 path:'collect',
                 name:'collect',
                 component:mycollect
-            }
+            },
+            {
+                path:'richtext',
+                name:'richtext',
+                component:richtext
+            }  
     	]
-    },
-    {
-        path:'richtext',
-        name:'richtext',
-        component:richtext
     },
     {
         path:'/ywindex',     //夜问模块
