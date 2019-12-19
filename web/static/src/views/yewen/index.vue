@@ -12,23 +12,25 @@
 				<el-tabs v-model="activeIndex" @tab-click="handleClick">
 				    <el-tab-pane label="最新" name="1"></el-tab-pane>
 				    <el-tab-pane label="推荐" name="2"></el-tab-pane>
-				    <el-tab-pane label="悬赏红包" name="3"><i class="icon el-icon-hongbao"></i></el-tab-pane>
+				    <el-tab-pane label="悬赏红包" name="3"></i></el-tab-pane>
 				    <el-tab-pane label="专场" name="4"></el-tab-pane>
 				</el-tabs>
-				<!-- 最新的tab -->
-				<newest  v-show="activeIndex == 1"></newest>
-				<!-- 推荐的tab -->
-				<recommend v-show="activeIndex == 2"></recommend>
-				<!-- 红包的tab -->
-				<red-packet v-show="activeIndex == 3"></red-packet>
-				<!-- 专场的tab -->
-				<special-field v-show="activeIndex == 4"></special-field>
+				<div class="scroll-list">
+					<!-- 最新的tab -->
+					<newest  v-show="activeIndex == 1"></newest>
+					<!-- 推荐的tab -->
+					<recommend v-show="activeIndex == 2"></recommend>
+					<!-- 红包的tab -->
+					<red-packet v-show="activeIndex == 3"></red-packet>
+					<!-- 专场的tab -->
+					<special-field v-show="activeIndex == 4"></special-field>
+				</div>
 			</div>
 		</div>
 		<!-- 右侧 -->
 		<div class="yw-aside-right">
 			<!-- 选上红包 -->
-			<div class="hot-box">
+			<div class="card-hot-box">
 				<div class="hot-box-t">
 					<img src="../../images/head.jpg">
 					<div>
@@ -36,7 +38,7 @@
 						<p class="text2">回答问题，一起领红包</p>
 					</div>
 					<span style="flex-grow:1"></span>
-					<a href="javascript:void(0);" class="text2">更多&gt;</a>
+					<a href="javascript:void(0);" class="btn-default-text pb10" @click="checkMore('3')">更多&gt;</a>
 				</div>
 				<div class="hot-box-m">
 					<h3>如果让你来策划鼠年的金钞营销活动，你会怎么策划？</h3>
@@ -48,6 +50,74 @@
 				</div>
 				<div class="hot-box-b">换一个</div>
 			</div>
+			<!-- 热门推荐 -->
+			<div class="card-hot-box box-shadow">
+				<h3 class="hot-title"><i class="icon el-icon-remen"></i>热门回答</h3>
+				<ul class="hot-artical-ul">
+					<li class="hot-artical-li">
+						<p class="hot-li-title">你见过哪些迷信互联网的歪理邪说和案例？</p>
+						<!-- <p class="hot-info"><span class="s1">你好先生</span><span class="s1">2019-09-20</span></p> -->
+					</li>
+					<li class="hot-artical-li">
+						<p class="hot-li-title">你见过哪些迷信互联网的歪理邪说和案例？</p>
+						<!-- <p class="hot-info"><span class="s1">你好先生</span><span class="s1">2019-09-20</span></p> -->
+					</li>
+					<li class="hot-artical-li">
+						<p class="hot-li-title">你见过哪些迷信互联网的歪理邪说和案例？</p>
+						<!-- <p class="hot-info"><span class="s1">你好先生</span><span class="s1">2019-09-20</span></p> -->
+					</li>
+				</ul>
+			</div>
+			<!-- 热门用户 -->
+			<div class="card-hot-box box-shadow">
+				<h3 class="hot-title"><i class="icon el-icon-remen"></i>热门回答</h3>
+				<ul class="hot-artical-ul">
+					<li class="hot-artical-li">
+						<p class="hot-li-title">你见过哪些迷信互联网的歪理邪说和案例？</p>
+						<!-- <p class="hot-info"><span class="s1">你好先生</span><span class="s1">2019-09-20</span></p> -->
+					</li>
+					<li class="hot-artical-li">
+						<p class="hot-li-title">你见过哪些迷信互联网的歪理邪说和案例？</p>
+						<!-- <p class="hot-info"><span class="s1">你好先生</span><span class="s1">2019-09-20</span></p> -->
+					</li>
+					<li class="hot-artical-li">
+						<p class="hot-li-title">你见过哪些迷信互联网的歪理邪说和案例？</p>
+						<!-- <p class="hot-info"><span class="s1">你好先生</span><span class="s1">2019-09-20</span></p> -->
+					</li>
+				</ul>
+			</div>
+			<!-- 邀请加入qq群 -->
+			<div class="card-hot-box box-shadow pt30" id="qqgroup" :class="showClass?'fixright':''">
+				<div class="invite-info">
+					<div class="invite">
+						<div class="invite-item">
+							<img src="../../images/head.jpg">
+							<p>干货文章</p>
+							<p>优质课程</p>
+						</div>
+						<div class="invite-item">
+							<img src="../../images/head.jpg">
+							<p>干货文章</p>
+							<p>优质课程</p>
+						</div>
+						<div class="invite-item">
+							<img src="../../images/head.jpg">
+							<p>干货文章</p>
+							<p>优质课程</p>
+						</div>
+					</div>
+					<!-- 扫码 -->
+					<div class="scan-code">
+						<img class="code" src="../../images/head.jpg">
+						<p class="code-desc">扫码即可下载app</p>
+					</div>
+				</div>
+				<!-- 加群 -->
+				<div class="group-box">
+					<div class="group-info">加入官方Q群，与更多互联网人一起讨论，共同成长</div>
+					<div><span class="group-num">QQ群：3838383</span><span class="yw-button" style="width:100px;">一键加群</span></div>
+				</div>
+			</div>
 		</div>
 	</div>
 </template>
@@ -56,12 +126,16 @@
 	import recommend from "./components/recommend.vue";
 	import redPacket from "./components/red_packet.vue";
 	import specialField from "./components/special_field.vue";
+	import $ from 'jquery';
 
     export default{
         name:"",
         data:function(){
             return {
-            	activeIndex:'1'
+            	activeIndex:'1',
+            	scroll,
+            	divTop:2,
+            	showClass:false			//当滚动条滚动的高度大于navbar高度的时候，固定
             }
         },
         components:{
@@ -80,7 +154,21 @@
 		    toDetail:function(){
 		    	// 到时会区分，前三个是一个详情，后面的一个是单独的详情
 		    	this.$router.push({path:'/ywdetail'})
-		    }
+		    },
+		    checkMore:function(num){		//右侧的红包查看更多
+		    	this.activeIndex = num;
+		    },
+		    handleScroll: function () {
+	            let clientHeight = document.documentElement.clientHeight || document.body.clientHeight;  
+	            // 设备/屏幕高度
+	            var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+	            console.log( "滚动的高度："+ scrollTop);
+	            if( scrollTop+60 > this.divTop ){
+	            	this.showClass = true;
+	            }else{
+	            	this.showClass = false;
+	            }
+	        }
         },
         watch:{
         	activeIndex:{
@@ -88,7 +176,12 @@
         			console.log(newval)
         		}
         	}
-        }
+        },
+        mounted() {
+        	var divTop = $("#qqgroup").offset().top;
+        	this.divTop = divTop;
+	      	window.addEventListener('scroll', this.handleScroll,true)
+	    },
     }
 </script>
 <style type="text/css">
@@ -123,17 +216,39 @@
 	.yw-main-body .yw-aside-left .el-tabs .el-tabs__item.is-active{font-weight: bold;}
 	.yw-main-body .yw-aside-left .el-tabs .el-tabs__active-bar{background-color: #f56040;}
 	/*右侧-热门推荐*/
-	.yw-main-body .yw-aside-right .hot-box{margin-bottom: 20px;box-shadow: 0px 3px 10px 0px rgba(153, 153, 153, 0.1);border-radius: 4px;background:#fff;}
-	.yw-main-body .yw-aside-right .hot-box .hot-box-t{display: flex;padding:29px 25px;box-sizing:border-box;border-bottom: 1px solid #E6E6E6;}
-	.yw-main-body .yw-aside-right .hot-box .hot-box-t img{width:40px;height:40px;margin-right:10px;}
-	.yw-main-body .yw-aside-right .hot-box .hot-box-t h3{text-align: left;margin-bottom:6px;}
-	.yw-main-body .yw-aside-right .hot-box .hot-box-t .text2{font-size:14px;color:#999;}
-	.yw-main-body .yw-aside-right .hot-box .hot-box-m{padding: 29px 25px 21px;border-bottom: 1px solid #E6E6E6;}
-	.yw-main-body .yw-aside-right .hot-box .hot-box-m h3{border-bottom: 1px solid #E6E6E6;margin-bottom:9px;font-size:14px;line-height:25px;padding-bottom:9px;}
-	.yw-main-body .yw-aside-right .hot-box .hot-box-m .text-con{display: flex;justify-content: space-between;}
-	.yw-main-body .yw-aside-right .hot-box .hot-box-m .text-m{font-size: 14px;color: #999;line-height: 25px;}
-	.yw-main-body .yw-aside-right .hot-box .hot-box-m .money{width: 252px;height: 40px;background: #ffeee5;border-radius: 4px;line-height: 40px;text-align: center;font-size: 16px;color: #FF5500;cursor: pointer;font-weight: bold;margin-top:15px;}
-	.yw-main-body .yw-aside-right .hot-box .hot-box-b{    height: 50px;line-height: 50px;text-align: center;font-size: 16px;color: #406080;cursor: pointer;moz-user-select: -moz-none;-moz-user-select: none;-o-user-select: none;-khtml-user-select: none;-webkit-user-select: none;-ms-user-select: none;user-select: none;}
+	.card-hot-box{margin-bottom: 20px;box-shadow: 0px 3px 10px 0px rgba(153, 153, 153, 0.1);border-radius: 4px;background:#fff;}
+	.card-hot-box.fixright{position: fixed;top:80px;width:300px;left:50%;margin-left:200px;z-index:2;}		/*滚动到底部则固定*/
+	.card-hot-box .hot-box-t{display: flex;padding:29px 25px;box-sizing:border-box;border-bottom: 1px solid #E6E6E6;}
+	.card-hot-box .hot-box-t img{width:40px;height:40px;margin-right:10px;}
+	.card-hot-box .hot-box-t h3{text-align: left;margin-bottom:6px;}
+	.card-hot-box .hot-box-t .text2{font-size:14px;color:#999;}
+	.card-hot-box .hot-box-m{padding: 29px 25px 21px;border-bottom: 1px solid #E6E6E6;}
+	.card-hot-box .hot-box-m h3{margin-bottom:9px;font-size:14px;line-height:25px;padding-bottom:9px;}
+	.card-hot-box .hot-box-m .text-con{display: flex;justify-content: space-between;}
+	.card-hot-box .hot-box-m .text-m{font-size: 14px;color: #999;line-height: 25px;}
+	.card-hot-box .hot-box-m .money{width: 252px;height: 40px;background: #ffeee5;border-radius: 4px;line-height: 40px;text-align: center;font-size: 16px;color: #FF5500;cursor: pointer;font-weight: bold;margin-top:15px;}
+	.card-hot-box .hot-box-b{    height: 50px;line-height: 50px;text-align: center;font-size: 16px;color: #406080;cursor: pointer;moz-user-select: -moz-none;-moz-user-select: none;-o-user-select: none;-khtml-user-select: none;-webkit-user-select: none;-ms-user-select: none;user-select: none;}
+	/*右侧的热门推荐list*/
+	.card-hot-box .hot-title{height:60px;line-height:60px;font-size:18px;color:#333;font-weight:bold;border-bottom:1px solid #EBEEF5;padding-left:30px;}
+	.card-hot-box .hot-title i{font-size: 24px;margin-right: 4px;vertical-align: top;margin-top: 17px;}
+	.card-hot-box .hot-artical-ul{}
+	.card-hot-box .hot-artical-ul .hot-artical-li{padding:18px 30px;border-bottom:1px solid #EBEEF5;}
+	.card-hot-box .hot-artical-ul .hot-artical-li .hot-li-title{font-size:14px;line-height:24px;cursor: pointer;color:#333;}
+	.card-hot-box .hot-artical-ul .hot-artical-li .hot-li-title:hover{color:#f56040;}
+	.card-hot-box .hot-artical-ul .hot-artical-li .hot-info{margin-top:20px;}
+	.card-hot-box .hot-artical-ul .hot-artical-li .hot-info .s1{font-size:12px;color:#999;display: inline-block;margin-right:12px;}
+	/*邀请加入qq部分*/
+	.card-hot-box .invite-info{border-bottom: 1px solid #EBEEF5;}
+	.card-hot-box .invite-info .invite{display: flex;justify-content:space-between;padding:0 30px;}
+	.card-hot-box .invite-info .invite .invite-item{align-items:flex-start;flex-wrap:nowrap;}
+	.card-hot-box .invite-info .invite .invite-item img{display: inline-block;border-radius: 50%;width:60px;height:60px;margin-bottom:8px;}
+	.card-hot-box .invite-info .invite .invite-item p{color:#999;font-size:12px;line-height:18px;text-align: center;}
+	.card-hot-box .invite-info .scan-code{padding:30px 0;}
+	.card-hot-box .scan-code .code{display: block;width:120px;height:120px;margin:0 auto;}
+	.card-hot-box .scan-code .code-desc{font-size:14px;margin-top:8px;text-align: center;}
+	.card-hot-box .group-box{padding:30px;}
+	.card-hot-box .group-box .group-info{font-size:14px;line-height:24px;}
+	.card-hot-box .group-box .group-num{font-size:14px;color:#333;margin-right:12px;}
 	/*热门专场*/
 	.yw-main-body .yw-aside-left .hot-field{background:#f7f7f7;padding:0 30px 30px;}
 	.yw-main-body .yw-aside-left .hot-field .hot-title{line-height: 60px;font-size:16px;}
@@ -155,26 +270,5 @@
 	.hot-field .hot-person .hot-b .p2{font-size:12px;color:#999;margin-top:8px;}
 	.hot-field .hot-person .hot-b .p2 span:after{content:"|";display: inline-block;margin:0 8px;}
 	.hot-field .hot-person .hot-b .p2 span:last-child:after{content:"";}
-	/*右侧的热门推荐list*/
-	.hot-contain{margin-bottom:30px;background:#fff;}
-	.hot-contain .hot-title{height:60px;line-height:60px;font-size:18px;color:#333;font-weight:bold;border-bottom:1px solid #EBEEF5;padding-left:30px;}
-	.hot-contain .hot-artical-ul{}
-	.hot-contain .hot-artical-ul .hot-artical-li{padding:18px 30px;border-bottom:1px solid #EBEEF5;}
-	.hot-contain .hot-artical-ul .hot-artical-li .hot-li-title{font-size:14px;line-height:24px;cursor: pointer;}
-	.hot-contain .hot-artical-ul .hot-artical-li .hot-li-title:hover{color:#f56040;}
-	.hot-contain .hot-artical-ul .hot-artical-li .hot-info{margin-top:20px;}
-	.hot-contain .hot-artical-ul .hot-artical-li .hot-info .s1{font-size:12px;color:#999;display: inline-block;margin-right:12px;}
-	/*邀请加入qq部分*/
-	.invite-box{background:#fff;padding-top:30px;}
-	.invite-box .invite-info{border-bottom: 1px solid #EBEEF5;}
-	.invite-box .invite-info .invite{display: flex;justify-content:space-between;padding:0 30px;}
-	.invite-box .invite-info .invite .invite-item{align-items:flex-start;flex-wrap:nowrap;}
-	.invite-box .invite-info .invite .invite-item img{display: inline-block;border-radius: 50%;width:60px;height:60px;margin-bottom:8px;}
-	.invite-box .invite-info .invite .invite-item p{color:#999;font-size:12px;line-height:18px;text-align: center;}
-	.invite-box .invite-info .scan-code{padding:30px 0;}
-	.invite-box .scan-code .code{display: block;width:120px;height:120px;margin:0 auto;}
-	.invite-box .scan-code .code-desc{font-size:14px;margin-top:8px;text-align: center;}
-	.invite-box .group-box{padding:30px;}
-	.invite-box .group-box .group-info{font-size:14px;line-height:24px;}
-	.invite-box .group-box .group-num{font-size:14px;color:#333;margin-right:12px;}
+	
 </style>

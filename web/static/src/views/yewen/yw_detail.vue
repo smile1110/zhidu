@@ -48,6 +48,15 @@
 							<div class="fl time">47分钟前</div>
 							<div class="fr reply">回复</div>
 						</div>
+						<!-- 点击回复后，出的部门：没有登录和已登录 -->
+						<div class="answer">
+							<div class="no-sign">^-^我来说两句，我先 <span>登录</span><span>注册</span></div>
+							<div class="has-sign clearfix">
+								<textarea class="answer-content" placeholder="^-^我来说两句....."></textarea>
+								<div class="btn-box fr"><span>取消</span><span class="sure">评论</span></div>
+							</div>
+
+						</div>
 					</li>
 					<li class="yw-content">
 						<div class="yw-content-head clearfix">
@@ -74,7 +83,7 @@
 		<!-- 右侧 -->
 		<div class="yw-aside-right">
 			<!-- 选上红包 -->
-			<div class="hot-box">
+			<div class="card-hot-box box-shadow">
 				<div class="hot-box-t">
 					<img src="../../images/head.jpg">
 					<div>
@@ -90,7 +99,7 @@
 				</div>
 			</div>
 			<!-- 热门推荐 -->
-			<div class="hot-contain">
+			<div class="card-hot-box box-shadow">
 				<h3 class="hot-title"><i class="icon el-icon-remen"></i>热门推荐</h3>
 				<ul class="hot-artical-ul">
 					<li class="hot-artical-li">
@@ -108,7 +117,7 @@
 				</ul>
 			</div>
 			<!-- 邀请加入qq群 -->
-			<div class="invite-box">
+			<div class="card-hot-box box-shadow pt30">
 				<div class="invite-info">
 					<div class="invite">
 						<div class="invite-item">
@@ -157,8 +166,8 @@
 	.yw-abottom .yw-ahead{height: 70px;padding: 0 30px;position: relative;line-height: 70px;border-bottom:1px solid #EBEEF5;}
 	.yw-abottom .yw-ahead .yw-remind .sp1:first-child{font-size:18px;color:#333;font-weight: bold;}
 	.linka{font-size:14px;}
-	.dropdown-menu-1929 .el-dropdown-menu__item--divided{border-top:0;}
-
+	.el-dropdown-menu__item--divided{border-top:0;}
+	#dropdown-menu-7148 .el-dropdown-menu__item--divided{border-top:0;}
 	ul.content-main li.yw-content{border-bottom:1px solid #EBEEF5;padding-bottom:38px;}
 	.yw-content-head{height:60px;margin:10px 30px 0;}
 	.yw-content-head .head-img{width:40px;height:40px;border-radius: 50%;display: inline-block;vertical-align: top;margin-top: 10px;}
@@ -166,11 +175,21 @@
 	.yw-content-head .head-desc .p1{font-size: 16px;line-height: 22px;margin-top:10px;}
 	.yw-content-head .head-desc .p2{font-size: 12px;text-align: left;}
 	.yw-content-head .star_num{line-height: 40px;width:60px;height:40px;background:#EBEEF5;border-radius: 5px;margin-top:10px;text-align: center;cursor: pointer;}
-	.yw-content-head .star_num .icon{}
+	.yw-content-head .star_num .icon{font-size:16px;vertical-align: top;margin-top:13px;margin-left:2px;}
 	.yw-content-main{padding:30px;margin-top:20px;}
 	.yw-content-bottom{padding: 0 30px;}
 	.yw-content-bottom .time,.yw-content-bottom .reply{font-size:14px;color:#999;}
-	.yw-content-bottom .reply{}
+	.yw-content-bottom .reply{cursor: pointer;}
+	.yw-content-bottom .reply:hover{color:#f56040;}
+	ul.content-main li.yw-content .answer{padding:30px;background:#EBEEF5;margin:20px 30px;color:#999;}
+	ul.content-main li.yw-content .answer .no-sign{background:#fff;font-size:14px;line-height:32px;text-align: center;}
+	ul.content-main li.yw-content .answer .no-sign span{margin-right:8px;color:#f56040;}
+	ul.content-main li.yw-content .answer .no-sign span.sp1:after{content:".";}
+	ul.content-main li.yw-content .answer .no-sign span:hover{margin-right:8px;color:#f04622;}
+	ul.content-main li.yw-content .answer .btn-box span{color:#f56040;cursor: pointer;margin-top:30px;}
+	ul.content-main li.yw-content .answer .btn-box span:hover{color:#f56040;}
+	ul.content-main li.yw-content .answer .btn-box span.sure{padding:8px 18px;background:#f56040;color:#fff;border-radius: 4px;margin-left:12px;}
+	ul.content-main li.yw-content .answer .answer-content{padding:8px 12px;display: block;border:1px solid #EBEEF5;width: 100%;box-sizing: border-box;height:78px;}
 	/*右侧按钮*/
 	.yw-button{display: inline-block;width:118px;height:40px;line-height:40px;background:#f56040;color:#fff;border-radius: 5px;text-align: center;cursor: pointer;}
 	.yw-button:first-child{margin-right:12px;}

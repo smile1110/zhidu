@@ -4,7 +4,7 @@ import '@/assets/iconfont/iconfont.css';			//引入fontsize，elemnt-ui中没有
 // import store from "store"
 import router from './router/router.js'
 import axios from 'axios'
-import $ from 'jquery'
+// import $ from 'jquery'
 // import ElementUi from 'element-ui'
 import ElementUi from './element/index'			//引入了element-ui的部分组件
 import 'element-ui/lib/theme-chalk/index.css'

@@ -8,8 +8,12 @@
                 <div class="fl nav-bar-list">
                     <el-menu :default-active="activeNav" class="el-menu-demo" mode="horizontal" @select="handleSelect">
                         <el-menu-item index="1">首页</el-menu-item>
-                        <el-menu-item index="2">分类浏览</el-menu-item>
-                        <el-menu-item index="3"><router-link to="/ywindex">夜问</router-link></el-menu-item>
+                        <el-menu-item index="2">智读</el-menu-item>
+                        <el-menu-item index="3">AI学</el-menu-item>
+                        <el-menu-item index="4"><router-link to="/ywindex">夜问</router-link></el-menu-item>
+                        <el-menu-item index="5">田野</el-menu-item>
+                        <el-menu-item index="6">紫竹</el-menu-item>
+                        <el-menu-item index="7">流氓村</el-menu-item>
                     </el-menu>
                 </div>
                 <!-- 中间的部分 -->
@@ -17,7 +21,7 @@
                     <div class="content-item"><i class="icon el-icon-circle-plus-outline"></i><span>提问</span></div>
                     <div class="content-item"><i class="icon el-icon-search"></i><span>搜索</span></div>
                     <div class="content-item"><i class="icon el-icon-mobile"></i><span>APP</span></div>
-                    <div class="content-item"><i class="icon el-icon-bell"></i><span>提问</span></div>
+                    <div class="content-item"><i class="icon el-icon-bell"></i><span></span></div>
                     <!-- 头像 -->
                     <!-- <ul>
                         <li><router-link to="/my/artical"><i class="icon"></i>我的文章</router-link></li>
@@ -54,7 +58,7 @@ export default {
     name: 'App',
     data:function(){
       return {
-        activeNav:"3"
+        activeNav:"4"
       }
     },
     methods:{

@@ -206,6 +206,69 @@
 						</div>
 					</div>
 				</li>
+				<li class="list-item">
+					<a href="#" class="item-head"><img src="../../../images/head.jpg"/></a>
+					<div class="item-head-box">
+						<a href="" class="head-box-type"><span class="ident">精选</span>
+							<span class="head-box-text">【每日一问】你认为允许撤回消息的时长应该是多少才合理？</span>
+						</a>
+						<div class="clearfix others-list">
+							<p class="fl">
+								<a href="others"><img src="../../../images/head.jpg" class="other-head"/></a>
+								<a href="others"><img src="../../../images/head.jpg" class="other-head"/></a>
+								<a href="others"><img src="../../../images/head.jpg" class="other-head"/></a>
+								<i class="icon el-icon-more"></i>
+								<span class="others-list-text">等30人参与讨论 | 2天前</span>
+							</p>
+							<p class="fr right-text">
+								<span class="others-list-text"><i class="icon el-icon-view"></i>2.4k</span>
+								<span class="others-list-text"><i class="icon el-icon-chat-dot-round"></i>3</span>
+							</p>
+						</div>
+					</div>
+				</li>
+				<li class="list-item">
+					<a href="#" class="item-head"><img src="../../../images/head.jpg"/></a>
+					<div class="item-head-box">
+						<a href="" class="head-box-type"><span class="ident">精选</span>
+							<span class="head-box-text">【每日一问】你认为允许撤回消息的时长应该是多少才合理？</span>
+						</a>
+						<div class="clearfix others-list">
+							<p class="fl">
+								<a href="others"><img src="../../../images/head.jpg" class="other-head"/></a>
+								<a href="others"><img src="../../../images/head.jpg" class="other-head"/></a>
+								<a href="others"><img src="../../../images/head.jpg" class="other-head"/></a>
+								<i class="icon el-icon-more"></i>
+								<span class="others-list-text">等30人参与讨论 | 2天前</span>
+							</p>
+							<p class="fr right-text">
+								<span class="others-list-text"><i class="icon el-icon-view"></i>2.4k</span>
+								<span class="others-list-text"><i class="icon el-icon-chat-dot-round"></i>3</span>
+							</p>
+						</div>
+					</div>
+				</li>
+				<li class="list-item">
+					<a href="#" class="item-head"><img src="../../../images/head.jpg"/></a>
+					<div class="item-head-box">
+						<a href="" class="head-box-type"><span class="ident">精选</span>
+							<span class="head-box-text">【每日一问】你认为允许撤回消息的时长应该是多少才合理？</span>
+						</a>
+						<div class="clearfix others-list">
+							<p class="fl">
+								<a href="others"><img src="../../../images/head.jpg" class="other-head"/></a>
+								<a href="others"><img src="../../../images/head.jpg" class="other-head"/></a>
+								<a href="others"><img src="../../../images/head.jpg" class="other-head"/></a>
+								<i class="icon el-icon-more"></i>
+								<span class="others-list-text">等30人参与讨论 | 2天前</span>
+							</p>
+							<p class="fr right-text">
+								<span class="others-list-text"><i class="icon el-icon-view"></i>2.4k</span>
+								<span class="others-list-text"><i class="icon el-icon-chat-dot-round"></i>3</span>
+							</p>
+						</div>
+					</div>
+				</li>
 			</ul>
 		</div>
 	</div>
