@@ -61,7 +61,7 @@
 	/*.card-list-box{padding:30px 0;}*/
 	.card-list-box li{padding:30px 0;border-bottom:1px solid #EBEEF5;}
 	.card-list-box li .others-desc{padding:0 30px;}
-	.card-list-box .file-img{height:190px;border-radius: 6px;border:1px solid #EBEEF5;margin:0 30px;box-sizing:border-box;}
+	.card-list-box .file-img{height:190px;border-radius: 6px;border:1px solid #EBEEF5;margin:0 30px;box-sizing:border-box;width:620px;}
 	.card-list-box .file-img img{width:100%;height:100%;}
 	.card-list-box .others-desc{padding:0 30px;}
 	.card-list-box .p-desc{font-size: 16px;color:#333;line-height:24px;margin-top:18px;margin-bottom:10px;padding:0 30px;}

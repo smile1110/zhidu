@@ -8,6 +8,7 @@ import axios from 'axios'
 // import ElementUi from 'element-ui'
 import ElementUi from './element/index'			//引入了element-ui的部分组件
 import 'element-ui/lib/theme-chalk/index.css'
+import './css/global.css'
 
 // import VueQuillEditor  from 'vue-quill-editor'
 // import 'quill/dist/quill.core.css'

@@ -162,7 +162,7 @@
 	            let clientHeight = document.documentElement.clientHeight || document.body.clientHeight;  
 	            // 设备/屏幕高度
 	            var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
-	            console.log( "滚动的高度："+ scrollTop);
+	            // console.log( "滚动的高度："+ scrollTop);
 	            if( scrollTop+60 > this.divTop ){
 	            	this.showClass = true;
 	            }else{
