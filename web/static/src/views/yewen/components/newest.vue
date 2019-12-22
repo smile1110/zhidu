@@ -1,12 +1,13 @@
 <!-- 最新列表 -->
 <template>
 	<div>
-		<div class="main-list">
+		<div class="main-list" id="listbox">
 			<ul class="list-box">
-				<li class="list-item" v-for="ask in dataList">
+				<li class="list-item" v-for="ask in dataList" @click="toDetail">
 					<a href="#" class="item-head"><img :src="ask.user_icon"/></a>
 					<div class="item-head-box">
-						<a href="" class="head-box-type"><span class="ident">精选</span>
+						<a href="" class="head-box-type">
+							<!-- <span class="ident">精选</span> -->
 							<span class="head-box-text">{{ask.ask_title}}</span>
 						</a>
 						<div class="clearfix others-list">
@@ -26,6 +27,7 @@
 				</li>
 			</ul>
 		</div>
+		<div class="loading-more" v-show="loadingFlag">正在加载，请稍等...</div>
 		<!-- 热门 -->
 		<!-- <div class="hot-field">
 			<div class="clearfix hot-title">
@@ -65,14 +67,19 @@
 		</div> -->
 	</div>
 </template>
+
 <script type="text/javascript">
+	import $ from 'jquery';
+
 	export default {
 	    name: '',
 	    data:function(){
 		    return {
 		        dataList:[],
+		        ismore:true,
 		        page:1,
-		        ask_type:100
+		        ask_type:100,
+		        loadingFlag:false
 		    }
 	    },
 	    methods:{
@@ -86,12 +93,42 @@
 		    		page:that.page,
 		        	ask_type:that.ask_type
 		    	}
+		    	if(!this.ismore){
+		    		return false;
+		    	}
 		    	this.$axios.get('/api/getAskLists',{params:subObj}).then(function(res){
 		    		if(res.data.status == 200){
-		    			that.dataList = res.data.data;
+		    			var resultArr = res.data.data;
+		    			that.loadingFlag = false;
+		    			for(var i=0;i<resultArr.length;i++){
+		    				that.dataList.push(resultArr[i]);
+		    			}
+		    			if(res.data.data.length<8){
+		    				that.ismore = false;
+		    			}else if(res.data.data.length == 8){
+		    				that.ismore = true;
+		    			}
 		    		}
 		    	})
-		    }
+		    },
+		    listScroll: function () {
+	            let clientHeight = document.documentElement.clientHeight || document.body.clientHeight;
+	            console.log("-----------")  
+	            console.log(clientHeight)
+	            // 设备/屏幕高度
+	            var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+	            // console.log( "滚动的高度："+ scrollTop);
+	            var ulHeight = $("#listbox").height();
+	            console.log(ulHeight)
+	            console.log(scrollTop)
+	            if( clientHeight+scrollTop > ulHeight+90 ){
+	            	this.page++;
+	            	this.loadingFlag = true;
+	            	this.getDataList();
+	            }else{
+	            	this.showClass = false;
+	            }
+	        }
 	    },
 	    mounted:function(){
             var that = this;
@@ -99,6 +136,7 @@
                 // this.initData();        //初始化数据
                 this.getDataList();
             })
+            window.addEventListener('scroll', this.listScroll,true)
         }
 	}
 </script>

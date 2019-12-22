@@ -12,8 +12,8 @@
 				<el-tabs v-model="activeIndex" @tab-click="handleClick">
 				    <el-tab-pane label="最新" name="1"></el-tab-pane>
 				    <el-tab-pane label="推荐" name="2"></el-tab-pane>
-				    <el-tab-pane label="悬赏红包" name="3"></i></el-tab-pane>
-				    <el-tab-pane label="专场" name="4"></el-tab-pane>
+				    <!-- <el-tab-pane label="悬赏红包" name="3"></i></el-tab-pane> -->
+				    <!-- <el-tab-pane label="专场" name="4"></el-tab-pane> -->
 				</el-tabs>
 				<div class="scroll-list">
 					<!-- 最新的tab -->
@@ -50,9 +50,9 @@
 				</div>
 				<div class="hot-box-b">换一个</div>
 			</div>
-			<!-- 热门推荐 -->
+			<!-- 热门问答 -->
 			<div class="card-hot-box box-shadow">
-				<h3 class="hot-title"><i class="icon el-icon-remen"></i>热门回答</h3>
+				<h3 class="hot-title"><i class="icon el-icon-remen"></i>热门问答</h3>
 				<ul class="hot-artical-ul">
 					<li class="hot-artical-li">
 						<p class="hot-li-title">你见过哪些迷信互联网的歪理邪说和案例？</p>
@@ -70,19 +70,47 @@
 			</div>
 			<!-- 热门用户 -->
 			<div class="card-hot-box box-shadow">
-				<h3 class="hot-title"><i class="icon el-icon-remen"></i>热门回答</h3>
+				<h3 class="hot-title"><i class="icon el-icon-remen"></i>热门用户</h3>
 				<ul class="hot-artical-ul">
-					<li class="hot-artical-li">
-						<p class="hot-li-title">你见过哪些迷信互联网的歪理邪说和案例？</p>
-						<!-- <p class="hot-info"><span class="s1">你好先生</span><span class="s1">2019-09-20</span></p> -->
+					<li class="hot-artical-li clearfix">
+						<img class="head-icon fl" src="../../images/head.jpg">
+						<div class="user-info fl">
+							<div class="name-box">
+								<p>旺仔0898</p>
+								<p class="name-num">+17</p>
+							</div>
+							<div class="name-desp">甄选生活，为我们的生活锦上添花！</div>
+						</div>
 					</li>
-					<li class="hot-artical-li">
-						<p class="hot-li-title">你见过哪些迷信互联网的歪理邪说和案例？</p>
-						<!-- <p class="hot-info"><span class="s1">你好先生</span><span class="s1">2019-09-20</span></p> -->
+					<li class="hot-artical-li clearfix">
+						<img class="head-icon fl" src="../../images/head.jpg">
+						<div class="user-info fl">
+							<div class="name-box">
+								<p>旺仔0898</p>
+								<p class="name-num">+12</p>
+							</div>
+							<div class="name-desp"></div>
+						</div>
 					</li>
-					<li class="hot-artical-li">
-						<p class="hot-li-title">你见过哪些迷信互联网的歪理邪说和案例？</p>
-						<!-- <p class="hot-info"><span class="s1">你好先生</span><span class="s1">2019-09-20</span></p> -->
+					<li class="hot-artical-li clearfix">
+						<img class="head-icon fl" src="../../images/head.jpg">
+						<div class="user-info fl">
+							<div class="name-box">
+								<p>旺仔0898</p>
+								<p class="name-num">+17</p>
+							</div>
+							<div class="name-desp">甄选生活，为我们的生活锦上添花！</div>
+						</div>
+					</li>
+					<li class="hot-artical-li clearfix">
+						<img class="head-icon fl" src="../../images/head.jpg">
+						<div class="user-info fl">
+							<div class="name-box">
+								<p>旺仔0898</p>
+								<p class="name-num">+17</p>
+							</div>
+							<div class="name-desp">甄选生活，为我们的生活锦上添花！</div>
+						</div>
 					</li>
 				</ul>
 			</div>
@@ -197,17 +225,17 @@
 	.list-box .list-item:first-child{border-top:none;}
 	.list-box .list-item .item-head-box{text-align: left;width:100%;}
 	.list-box .list-item .icon{font-size:16px;vertical-align: top;margin-right:2px;}
-	.list-box .list-item .item-head{margin-right:30px;}
+	.list-box .list-item .item-head{margin-right:22px;}
 	.list-box .list-item .item-head img{width:40px;height:40px;border-radius: 30px;}
 	.list-box .head-box-type{line-height: 20px;}
-	.list-box .head-box-type span.ident{width: 60px;height: 20px;background: rgba(255,85,0,1);border-radius: 4px;color: white;font-size: 12px;display: inline-block;text-align: center;line-height: 20px;}
-	.list-box .head-box-text{font-size:14px;line-height: 20px;}
+	.list-box .head-box-type span.ident{width: 60px;height: 20px;background: rgba(255,85,0,1);border-radius: 4px;color: white;font-size: 12px;display: inline-block;text-align: center;line-height: 20px;margin-right:8px;}
+	.list-box .head-box-text{font-size:16px;line-height: 20px;}
 	.list-box .other-head{display:inline-block;width:20px;height:20px;border-radius: 60px;margin-right: 4px;}
 	.list-box .others-list{margin-top:16px;}
 	.list-box .others-list .right-text{font-size:0;}
-	.list-box .others-list .right-text .icon{font-size: 16px;margin-right: 4px;vertical-align: top;margin-top: -1px;}
+	.list-box .others-list .right-text .icon{font-size: 16px;margin-right: 4px;vertical-align: top;margin-top: 2px;}
 	.list-box .others-list .icon.el-icon-more{color: #999;border-radius: 50%;border: 1px solid #999;padding: 1px;vertical-align: top;display: inline-block;margin-right:4px;}
-	.list-box .others-list .others-list-text{font-size:12px;color:#999;vertical-align: top;}
+	.list-box .others-list .others-list-text{font-size:12px;color:#999;vertical-align: top;line-height: 22px;}
 	.list-box .others-list .others-list-text:first-child:after{content:"|";font-size:12px;color:#999;vertical-align: top;display: inline-block;margin:0 5px;}
 	/*tab*/
 	.yw-main-body .yw-aside-left .el-tabs{height:70px;line-height: 70px;}
@@ -229,14 +257,21 @@
 	.card-hot-box .hot-box-m .money{width: 252px;height: 40px;background: #ffeee5;border-radius: 4px;line-height: 40px;text-align: center;font-size: 16px;color: #FF5500;cursor: pointer;font-weight: bold;margin-top:15px;}
 	.card-hot-box .hot-box-b{    height: 50px;line-height: 50px;text-align: center;font-size: 16px;color: #406080;cursor: pointer;moz-user-select: -moz-none;-moz-user-select: none;-o-user-select: none;-khtml-user-select: none;-webkit-user-select: none;-ms-user-select: none;user-select: none;}
 	/*右侧的热门推荐list*/
-	.card-hot-box .hot-title{height:60px;line-height:60px;font-size:18px;color:#333;font-weight:bold;border-bottom:1px solid #EBEEF5;padding-left:30px;}
+	.card-hot-box .hot-title{height:60px;line-height:60px;font-size:18px;color:#333;font-weight:bold;border-bottom:1px solid #EBEEF5;padding-left:24px;}
 	.card-hot-box .hot-title i{font-size: 24px;margin-right: 4px;vertical-align: top;margin-top: 17px;}
 	.card-hot-box .hot-artical-ul{}
-	.card-hot-box .hot-artical-ul .hot-artical-li{padding:18px 30px;border-bottom:1px solid #EBEEF5;}
+	.card-hot-box .hot-artical-ul .hot-artical-li{padding:18px 24px;border-bottom:1px solid #EBEEF5;cursor: pointer;}
 	.card-hot-box .hot-artical-ul .hot-artical-li .hot-li-title{font-size:14px;line-height:24px;cursor: pointer;color:#333;}
 	.card-hot-box .hot-artical-ul .hot-artical-li .hot-li-title:hover{color:#f56040;}
 	.card-hot-box .hot-artical-ul .hot-artical-li .hot-info{margin-top:20px;}
 	.card-hot-box .hot-artical-ul .hot-artical-li .hot-info .s1{font-size:12px;color:#999;display: inline-block;margin-right:12px;}
+	.card-hot-box .hot-artical-ul .hot-artical-li:hover{background: #f7f7f7;}
+	/*右侧的热门用户*/
+	.card-hot-box .hot-artical-ul .hot-artical-li .head-icon{width:40px;height:40px;border-radius: 50%;margin-right:12px;}
+	.card-hot-box .hot-artical-ul .hot-artical-li .user-info{width:200px;}
+	.card-hot-box .hot-artical-ul .hot-artical-li .user-info .name-box{font-size:14px;line-height:24px;color:#333;font-weight: bold;position: relative;}
+	.card-hot-box .hot-artical-ul .hot-artical-li .user-info .name-num{position: absolute;right:0;top:0;width:30px;text-align: right;color:#f56040;font-weight: normal;}
+	.card-hot-box .hot-artical-ul .hot-artical-li .user-info .name-desp{font-size:12px;color:#999;}
 	/*邀请加入qq部分*/
 	.card-hot-box .invite-info{border-bottom: 1px solid #EBEEF5;}
 	.card-hot-box .invite-info .invite{display: flex;justify-content:space-between;padding:0 30px;}

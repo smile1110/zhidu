@@ -34,11 +34,14 @@
                                 <!-- <i class="el-icon-arrow-down el-icon--right"></i> -->
                             </span>
                             <el-dropdown-menu slot="dropdown">
-                                <el-dropdown-item>silence</el-dropdown-item>
-                                <el-dropdown-item divided><router-link @click.native="checkMy" to="/my/artical">我的文章</router-link></el-dropdown-item>
-                                <el-dropdown-item><router-link @click.native="checkMy" to="/my/collect">我的收藏</router-link></el-dropdown-item>
-                                <!-- <el-dropdown-item>双皮奶</el-dropdown-item>
-                                <el-dropdown-item style="margin-top:8px;">蚵仔煎</el-dropdown-item> -->
+                                <!-- <el-dropdown-item>silence</el-dropdown-item> -->
+                                <!-- <el-dropdown-item divided><router-link @click.native="checkMy" to="/my/artical">我的文章</router-link></el-dropdown-item>
+                                <el-dropdown-item><router-link @click.native="checkMy" to="/my/collect">我的收藏</router-link></el-dropdown-item> -->
+                                <el-dropdown-item><router-link @click.native="checkMy" to="/mycenter/myquestion">我的主页</router-link></el-dropdown-item>
+                                <el-dropdown-item><router-link @click.native="checkMy" to="/my/collect">个人设置</router-link></el-dropdown-item>
+                                <el-dropdown-item><router-link @click.native="checkMy" to="/my/collect">帮助中心</router-link></el-dropdown-item>
+                                <el-dropdown-item><router-link @click.native="checkMy" to="/my/collect">意见反馈</router-link></el-dropdown-item>
+                                <el-dropdown-item><router-link >退出登录</router-link></el-dropdown-item>
                             </el-dropdown-menu>
                         </el-dropdown>
                     </div>
@@ -90,8 +93,8 @@ export default {
     .nav-bar .nav-bar-list li.el-menu-item{font-size:14px!important;color:#333;}
     .nav-bar .nav-bar-list li.el-menu-item:hover,.nav-bar .nav-bar-list li.el-menu-item.is-active{color:#f56040;}
     .nav-bar-box .el-menu--horizontal>.el-menu-item.is-active{border-bottom:2px solid red;color:#f56040;}
-    .el-dropdown-menu{padding:0;}
-    .el-dropdown-menu .el-dropdown-menu__item{line-height: 38px;margin:0;}
+    /*.el-dropdown-menu{padding:0;}*/
+    /*.el-dropdown-menu .el-dropdown-menu__item{line-height: 38px;margin:0;}*/
     .el-dropdown-menu__item:focus, .el-dropdown-menu__item:hover {color: #f56040!important;background:none!important;}
     .el-dropdown-menu__item:focus, .el-dropdown-menu__item:hover a{color: #f56040!important;}
     .nav-bar-box .right-content .content-item{display: inline-block;margin-right:24px;line-height: 60px;cursor: pointer;}
