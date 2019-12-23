@@ -70,7 +70,7 @@
 			</div>
 			<!-- 热门用户 -->
 			<div class="card-hot-box box-shadow">
-				<h3 class="hot-title"><i class="icon el-icon-remen"></i>热门用户</h3>
+				<h3 class="hot-title"><i class="icon el-icon-user-primary"></i>热门用户</h3>
 				<ul class="hot-artical-ul">
 					<li class="hot-artical-li clearfix">
 						<img class="head-icon fl" src="../../images/head.jpg">
@@ -177,7 +177,7 @@
 		        console.log(key, keyPath);
 		    },
 		    handleClick(tab, event) {
-		        console.log(tab, event);
+		        // console.log(tab, event);
 		    },
 		    toDetail:function(){
 		    	// 到时会区分，前三个是一个详情，后面的一个是单独的详情
@@ -236,7 +236,7 @@
 	.list-box .others-list .right-text .icon{font-size: 16px;margin-right: 4px;vertical-align: top;margin-top: 2px;}
 	.list-box .others-list .icon.el-icon-more{color: #999;border-radius: 50%;border: 1px solid #999;padding: 1px;vertical-align: top;display: inline-block;margin-right:4px;}
 	.list-box .others-list .others-list-text{font-size:12px;color:#999;vertical-align: top;line-height: 22px;}
-	.list-box .others-list .others-list-text:first-child:after{content:"|";font-size:12px;color:#999;vertical-align: top;display: inline-block;margin:0 5px;}
+	.list-box .others-list .others-list-text:first-child:after{content:"|";font-size:12px;color:#999;vertical-align: top;display: inline-block;margin:-1px 5px;}
 	/*tab*/
 	.yw-main-body .yw-aside-left .el-tabs{height:70px;line-height: 70px;}
 	.yw-main-body .yw-aside-left .el-tabs .el-tabs__item{font-size:18px;color:#333;}
@@ -251,6 +251,7 @@
 	.card-hot-box .hot-box-t h3{text-align: left;margin-bottom:6px;}
 	.card-hot-box .hot-box-t .text2{font-size:14px;color:#999;}
 	.card-hot-box .hot-box-m{padding: 29px 25px 21px;border-bottom: 1px solid #E6E6E6;}
+	.card-hot-box .hot-box-m .icon{margin-right:2px;}
 	.card-hot-box .hot-box-m h3{margin-bottom:9px;font-size:14px;line-height:25px;padding-bottom:9px;}
 	.card-hot-box .hot-box-m .text-con{display: flex;justify-content: space-between;}
 	.card-hot-box .hot-box-m .text-m{font-size: 14px;color: #999;line-height: 25px;}

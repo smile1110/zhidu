@@ -23,14 +23,14 @@
         <div class="wb-main clearfix">
             <div class="main-left fl">
                 <ul>
-                    <li><router-link to="/mycenter/myquestion"><i class="el-icon-document icon"></i>我的提问</router-link></li>
-                    <li><router-link to="/mycenter/my_answer"><i class="el-icon-star-on icon"></i></i>我的回答</router-link></li>
-                    <li><router-link to="/mycenter/concerns"><i class="el-icon-star-on icon"></i></i>关注的问题</router-link></li>
-                    <li><router-link to="/mycenter/myfans"><i class="el-icon-star-on icon"></i></i>我的粉丝</router-link></li>
-                    <li><router-link to="/mycenter/myconcern"><i class="el-icon-star-on icon"></i></i>我的关注</router-link></li>
-                    <li><router-link to="/mycenter/myartical"><i class="el-icon-star-on icon"></i></i>我的文章</router-link></li>
-                    <li><router-link to="/mycenter/mysetup"><i class="el-icon-star-on icon"></i></i>设置</router-link></li>
-                    <li><router-link to="/mycenter/myvalue_record"><i class="el-icon-star-on icon"></i></i>经验值记录</router-link></li>
+                    <li><router-link to="/mycenter/myquestion">我的提问</router-link></li>
+                    <li><router-link to="/mycenter/my_answer">我的回答</router-link></li>
+                    <li><router-link to="/mycenter/concerns">关注的问题</router-link></li>
+                    <li><router-link to="/mycenter/myfans">我的粉丝</router-link></li>
+                    <li><router-link to="/mycenter/myconcern">我的关注</router-link></li>
+                    <li><router-link to="/mycenter/myartical">我的文章</router-link></li>
+                    <li><router-link to="/mycenter/mysetup">设置</router-link></li>
+                    <li><router-link to="/mycenter/myvalue_record">经验值记录</router-link></li>
                 </ul>
             </div>
             <div class="main-right fr">
@@ -71,16 +71,23 @@
 .wb-main .main-left ul li a{display: inline-block;width: 100%;box-sizing: border-box;height:100%;padding:18px;}
 .wb-main .main-left ul li i.icon{font-size:18px;margin-right:8px;}
 .wb-main .main-left ul li a.router-link-active{color:#f56040;border-left: 1px solid #f04622;background:#fbe7e2;}
-.wb-main .main-right .main-nav .el-menu-item{font-size:16px;}
+.wb-main .main-right .main-nav .el-menu-item{font-size:18px;}
 .wb-main .main-right .main-nav .add-art{color:#f56040;padding:20px 0 0 0;font-size:16px;cursor:pointer;}
 /*列表*/
-.wb-main .main-right .main-nav .main-empty-tips .art-tips{font-size: 12px;color: red;padding-top: 12px;text-align: left;}
+/*.wb-main .main-right .main-nav .main-empty-tips .art-tips{font-size: 12px;color: red;padding-top: 12px;text-align: left;}*/
 .wb-main .main-right .main-nav .art-empty-list{text-align: center;font-size:18px;padding:20px 0;}
 .main-right .main-nav li.is-active{border-bottom: 2px solid #f56040;}
 /*文章列表*/
+.main-content{min-height:500px;}
+.main-content .tips-desc{color:#999;line-height: 28px;font-size:12px;}
+.main-content .main-empty-tips{width:300px;height:220px;margin:120px auto 0;text-align: center;color:#999;}
+.main-content .main-empty-tips .icon{font-size:62px;color:#999;}
+.main-content .main-empty-tips .art-tips{text-align: center;line-height: 32px;margin-bottom: 12px;}
 .art-list-box {padding-bottom:60px;}
 .art-list-box .list-item{border-bottom:1px dotted #EBEEF5;padding:12px 0 10px;font-size:14px;color:#333;}
 .art-list-box .list-item .el-icon-time{margin-right:4px;}
 .art-list-box .list-item .el-icon-delete{cursor: pointer;color:red;margin-left:8px;}
 .art-list-box .list-item .time-box{}
+/*我的关注*/
+.card-list-box li{float:left;}
 </style>

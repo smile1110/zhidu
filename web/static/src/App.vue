@@ -37,11 +37,11 @@
                                 <!-- <el-dropdown-item>silence</el-dropdown-item> -->
                                 <!-- <el-dropdown-item divided><router-link @click.native="checkMy" to="/my/artical">我的文章</router-link></el-dropdown-item>
                                 <el-dropdown-item><router-link @click.native="checkMy" to="/my/collect">我的收藏</router-link></el-dropdown-item> -->
-                                <el-dropdown-item><router-link @click.native="checkMy" to="/mycenter/myquestion">我的主页</router-link></el-dropdown-item>
-                                <el-dropdown-item><router-link @click.native="checkMy" to="/my/collect">个人设置</router-link></el-dropdown-item>
-                                <el-dropdown-item><router-link @click.native="checkMy" to="/my/collect">帮助中心</router-link></el-dropdown-item>
-                                <el-dropdown-item><router-link @click.native="checkMy" to="/my/collect">意见反馈</router-link></el-dropdown-item>
-                                <el-dropdown-item><router-link >退出登录</router-link></el-dropdown-item>
+                                <el-dropdown-item><router-link to="/mycenter/myquestion">我的主页</router-link></el-dropdown-item>
+                                <el-dropdown-item><router-link to="/mycenter/myquestion">个人设置</router-link></el-dropdown-item>
+                                <el-dropdown-item><router-link to="/mycenter/myquestion">帮助中心</router-link></el-dropdown-item>
+                                <el-dropdown-item><router-link to="/mycenter/myquestion">意见反馈</router-link></el-dropdown-item>
+                                <el-dropdown-item><router-link to="/mycenter/myquestion">退出登录</router-link></el-dropdown-item>
                             </el-dropdown-menu>
                         </el-dropdown>
                     </div>

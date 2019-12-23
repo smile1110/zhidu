@@ -94,7 +94,7 @@
 					<!-- <a href="javascript:void(0);" class="text2">更多&gt;</a> -->
 				</div>
 				<div class="hot-box-m">
-					<div class="yw-button"><i class="icon el-icon-plus"></i><span>关注问题</span></div>
+					<div class="yw-button"><i class="icon el-icon-attend"></i><span>关注问题</span></div>
 					<div class="yw-button"><i class="icon el-icon-plus"></i><span>写回答</span></div>
 				</div>
 			</div>

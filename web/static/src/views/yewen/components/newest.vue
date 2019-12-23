@@ -19,8 +19,8 @@
 								<span class="others-list-text">等{{ask.user_ask && ask.user_ask.length || 0}}人参与讨论 | 2天前</span>
 							</p>
 							<p class="fr right-text">
-								<span class="others-list-text"><i class="icon el-icon-view"></i>{{ask.ask_love}}</span>
-								<span class="others-list-text"><i class="icon el-icon-chat-dot-round"></i>3</span>
+								<span class="others-list-text"><i class="icon el-icon-yanjing"></i>{{ask.ask_love}}</span>
+								<span class="others-list-text"><i class="icon el-icon-pinglun"></i>3</span>
 							</p>
 						</div>
 					</div>

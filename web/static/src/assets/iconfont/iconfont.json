@@ -6,6 +6,13 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "77156",
+      "name": "微信",
+      "font_class": "weixin",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
       "icon_id": "594378",
       "name": "评论",
       "font_class": "pinglun",
@@ -18,6 +25,20 @@
       "font_class": "dianzan",
       "unicode": "e656",
       "unicode_decimal": 58966
+    },
+    {
+      "icon_id": "1105010",
+      "name": "手机",
+      "font_class": "phone",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "1617458",
+      "name": "达人",
+      "font_class": "daren",
+      "unicode": "e616",
+      "unicode_decimal": 58902
     },
     {
       "icon_id": "1990904",
@@ -36,9 +57,30 @@
     {
       "icon_id": "2570193",
       "name": "眼睛",
-      "font_class": "yanjing-tianchong",
+      "font_class": "yanjing",
       "unicode": "e67b",
       "unicode_decimal": 59003
+    },
+    {
+      "icon_id": "2849458",
+      "name": "热门",
+      "font_class": "solid-remen",
+      "unicode": "e647",
+      "unicode_decimal": 58951
+    },
+    {
+      "icon_id": "3427833",
+      "name": "星星",
+      "font_class": "star",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "5270852",
+      "name": "收 藏-产品详情",
+      "font_class": "shoucang",
+      "unicode": "e613",
+      "unicode_decimal": 58899
     },
     {
       "icon_id": "6036303",
@@ -46,6 +88,13 @@
       "font_class": "user-primary",
       "unicode": "e809",
       "unicode_decimal": 59401
+    },
+    {
+      "icon_id": "6607919",
+      "name": "经验值",
+      "font_class": "jingyanzhi",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
     },
     {
       "icon_id": "9049284",
@@ -60,6 +109,13 @@
       "font_class": "medal",
       "unicode": "e629",
       "unicode_decimal": 58921
+    },
+    {
+      "icon_id": "12103653",
+      "name": "用户收藏，用户关注",
+      "font_class": "pop_users",
+      "unicode": "eb81",
+      "unicode_decimal": 60289
     }
   ]
 }
